@@ -1,6 +1,10 @@
 class CartsController < ApplicationController
 
   def show
+    if cart.empty?
+      render "emptyCart"
+    end
+    puts cart.empty?
   end
 
   def add_item
@@ -8,6 +12,7 @@ class CartsController < ApplicationController
     modify_cart_delta(product_id, +1)
 
     redirect_to :back
+    
   end
 
   def remove_item
