@@ -12,6 +12,13 @@ Rails.application.routes.draw do
 
   resources :orders, only: [:create, :show]
 
+  resources :about, only: [:index]
+  # resources :about, path: '/about'
+
+  # namespace :about do
+  #   root to:'about#show'
+  # end
+
   namespace :admin do
     root to: 'dashboard#show'
     resources :products, except: [:edit, :update, :show]
