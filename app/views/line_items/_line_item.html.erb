@@ -1,0 +1,23 @@
+
+<p>
+product name:  <%= line_item.product.name %> 
+</p>
+
+<p>
+product image:   
+<%= line_item.product.image %>
+</p>
+<p>
+product description :    <%= line_item.product.description %>
+</p>
+<p>
+product id:    <%= line_item.product_id %>
+</p>
+<p>
+quantity: <%= line_item.quantity%>
+</p>
+<p>
+quantity total cost: 
+<%= humanized_money_with_symbol line_item.total_price_cents / 100 %>
+
+</p>
