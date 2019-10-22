@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Product, type: :model do
   let(:category) { Category.new(name: "cars") }
   subject { Product.new(name: "new car", description: "red new car", image: "www.google.com", price_cents: 30000, quantity: 10, category: category) }
+
   describe 'Validations' do
     # validation tests/examples here
     it "product is valid" do 
@@ -11,6 +12,7 @@ RSpec.describe Product, type: :model do
     it "products name to be nil" do 
       subject.name = nil
       expect(subject.name).to be_nil
+      expect(subject.errors[:name]).to be_empty
     end
     it "product name is valid" do 
       expect(subject.name).to be_present
