@@ -25,3 +25,21 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+
+
+!["View product details"](https://github.com/AndrewHui/jungle-rails/blob/master/ReadMe%20gifs/product_details.gif)
+
+Viewing product details
+
+!["Adding products to cart"](https://github.com/AndrewHui/jungle-rails/blob/master/ReadMe%20gifs/adding_to_cart.gif)
+
+Adding products to the cart
+
+!["Purchase payments"](https://github.com/AndrewHui/jungle-rails/blob/master/ReadMe%20gifs/purchasePayment.gif)
+
+Purchase payments
+
+!["Logging into the website"](https://github.com/AndrewHui/jungle-rails/blob/master/ReadMe%20gifs/login.gif)
+
+Logging into the website
