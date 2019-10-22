@@ -1,6 +1,6 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example. Users have the functions of registration, login, reading details of products, adding products to cart, and purchasing products using stripe. Admins have additional access of creating new products and new categories. 
 
 
 ## Setup
