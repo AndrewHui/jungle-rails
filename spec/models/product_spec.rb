@@ -8,14 +8,30 @@ RSpec.describe Product, type: :model do
     it "product is valid" do 
       expect(subject).to be_valid
     end
+    it "products name to be nil" do 
+      subject.name = nil
+      expect(subject.name).to be_nil
+    end
     it "product name is valid" do 
       expect(subject.name).to be_present
     end
+    it "products price to be nil" do 
+      subject.price_cents = nil
+      expect(subject.price_cents).to be_nil
+    end
     it "product price is valid" do
-      expect(subject.price).to be_present
+      expect(subject.price_cents).to be_present
+    end
+    it "products quantity to be nil" do 
+      subject.quantity = nil
+      expect(subject.quantity).to be_nil
     end
     it "product quantity is valid" do
       expect(subject.quantity).to be_present
+    end
+    it "products category to be nil" do 
+      subject.category = nil
+      expect(subject.category).to be_nil
     end
     it "product category is valid" do
       expect(subject.category).to be_present
